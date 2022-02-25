@@ -48,8 +48,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/llBar"
-        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
         android:text="@string/strName" />
 
     <TextView
@@ -57,28 +57,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvName"
-        android:layout_marginTop="200dp"
         android:layout_centerHorizontal="true"
-        android:textAllCaps="true"
-        android:text="Frase" />
+        android:layout_marginTop="200dp"
+        android:padding="12dp"
+        android:text="Frase"
+        android:textAllCaps="true" />
 
     <View
         android:id="@+id/vwPhrase"
         android:layout_width="120dp"
         android:layout_height="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_below="@id/tvPhrase"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/tvPhrase"/>
+        android:layout_marginTop="40dp" />
 
     <Button
+        android:id="@+id/btnNewPhrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-      android:layout_alignParentBottom="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textAllCaps="true"
-        android:text="Nova Frase"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimaryDark"/>
+        android:background="@drawable/ripple_button"
+        android:text="Nova Frase"
+        android:textAllCaps="true" />
 
 
 </RelativeLayout>
